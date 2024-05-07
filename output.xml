@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.0 on win32)" generated="2024-05-07T13:34:26.101578" rpa="false" schemaversion="5">
+<suite id="s1" name="HelloWorld" source="c:\github\robotfmw\HelloWorld.robot">
+<test id="s1-t1" name="First Test" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-07T13:34:26.480956" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.mx/'.</msg>
+<arg>https://www.google.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T13:34:26.480956" elapsed="7.365709"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T13:34:36.865714" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T13:34:33.847662" elapsed="3.018052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T13:34:36.865714" level="INFO">Typing text 'Testing QA' into text field '//textarea[@title='Buscar']'.</msg>
+<arg>//textarea[@title='Buscar']</arg>
+<arg>Testing QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T13:34:36.865714" elapsed="0.120764"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-07T13:34:36.986478" level="INFO">Sending key(s) ('ENTER',) to //textarea[@title='Buscar'] element.</msg>
+<msg time="2024-05-07T13:34:37.291561" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-05-07T13:34:37.291561" level="INFO">Releasing special key ENTER.</msg>
+<arg>//textarea[@title='Buscar']</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-07T13:34:36.986478" elapsed="2.893191"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T13:34:46.899092" level="INFO">Slept 7 seconds.</msg>
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T13:34:39.883296" elapsed="7.015796"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T13:34:46.899092" elapsed="2.282938"/>
+</kw>
+<status status="PASS" start="2024-05-07T13:34:26.465941" elapsed="22.717142"/>
+</test>
+<status status="PASS" start="2024-05-07T13:34:26.107743" elapsed="23.075340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="HelloWorld">HelloWorld</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
